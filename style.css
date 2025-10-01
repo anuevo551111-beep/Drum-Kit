@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: magenta;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.drumset {
+  position: relative;
+  width: 50vw;
+  max-width: 900px;
+  height: 65vh;
+  margin-left: -60px;
+}
+
+.drum {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.drum img {
+  width: 170px;
+  height: auto;
+}
+
+.drum p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: brown;
+}
+
+.drum.active {
+  transform: scale(1.2) rotate(-5deg);
+  filter: brightness(1.5);
+}
+
+.crash { top: 44%; left: 10%; } 
+.tom1 { top: 20%; left: 26%; }
+.tom2 { top: 20%; left: 66%; }
+.snare { top: 11%; left: 46%; }
+.kick { top: 48%; left: 54%; }
+.tom3 { top: 48%; left: 75%; } 
+.tom4 { top: 47%; left: 32%; }
